@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "medium";
+}
+@font-face{
+  src: url(../assert/Gotham-Medium.otf);
+  font-family: "medium";
+}
+
+.modal{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.384);
+  top: 0;
+  left: 0;
+  z-index: 19;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 20px solid #009999;
+  box-sizing: border-box;
+}
+
+.start{
+  z-index: 99;
+  width: 140px;
+  height:140px;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 6px solid #CC3300;
+  background-color: #FFCC00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transform: rotate(-20deg);
+  color:  #CC3300;
+}
+
+
+.empty{
+  width: 300px;
+}
+
+.start:hover{
+  transition: transform .2s;
+     transform: scale(1.2);
+     transform: rotate(-10deg);
+   }
+#circle {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%
+  }
+
+  
+  #square {
+    width: 80px;
+    height: 80px;
+    background: white;
+  }
+
+  ul{
+      list-style: none;
+      margin: 20px;
+      display:flex;
+      padding: 30px;
+      justify-content: space-around;
+      align-items: center;
+      width: 700px;
+      background-color: rgba(160, 156, 156, 0.651);
+      margin: 50px auto;
+  }
+
+  .finish{
+    width: 700px;
+    padding: 30px;
+    color: #FF9900;
+    font-size: 70px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+   
+  }
+
+  .play{
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 5px solid #CC3300;
+    background-color: #FFCC00;
+    padding: 10px;
+    transform: rotate(-20deg);
+  }
+
+   .play a{
+    text-decoration: none;
+    color:  #CC3300;
+  }
+
+  .play:hover{
+ transition: transform .2s;
+    transform: scale(1.2);
+    transform: rotate(-10deg);
+  }
+
+  #triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid white;
+  }
+
+
+  #heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+  }
+  #heart:before,
+  #heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: white;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+
+  }
+  #heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+.figure{
+  background-color: rgba(144, 255, 16, 0.349);
+}
+  
+ .circle {
+  width: 80px;
+  height: 80px;
+  background: rgba(235, 69, 105, 0.849);
+  border-radius: 50%
+}
+
+
+.square {
+  width: 80px;
+  height: 80px;
+  background: #60ff40d7;
+}
+
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid rgba(15, 184, 226, 0.8) ;
+}
+
+  .heart {
+    z-index: 9;
+    position: relative;
+    width: 100px;
+    height: 90px;
+  }
+  .heart:before,
+  .heart:after {
+    z-index: 99;
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgba(255, 0, 0);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .heart:after {
+    z-index: 99;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
